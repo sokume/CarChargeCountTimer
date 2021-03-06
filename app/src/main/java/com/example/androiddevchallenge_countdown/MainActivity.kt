@@ -457,7 +457,8 @@ fun ActionScreen() {
     Row {
         Column(
             modifier = Modifier
-                .weight(1.0f,
+                .weight(
+                    1.0f,
                     true
                 )
                 .padding(16.dp),
@@ -465,9 +466,10 @@ fun ActionScreen() {
             Setting()
         }
         Column(
-            modifier = Modifier.weight(1.0f,
-            true
-        )
+            modifier = Modifier.weight(
+                1.0f,
+                true
+            )
         ) {
             Box(
                 modifier = Modifier
@@ -478,7 +480,8 @@ fun ActionScreen() {
             }
         }
         Column(
-            modifier = Modifier.weight(1.0f, true)
+            modifier = Modifier.weight(
+                1.0f, true)
         ) {
             Box(
                 modifier = Modifier
@@ -494,14 +497,16 @@ fun ActionScreen() {
 
 @Composable
 fun Setting() {
-    Box(modifier = Modifier.fillMaxSize(),
+    Box(
+        modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.TopStart
     ) {
-        IconButton(onClick = { viewModel.changeSettingState() },
-        )
-        {
-            Icon(imageVector = Icons.Outlined.Settings,
-                contentDescription = "setting button" ,
+        IconButton(
+            onClick = { viewModel.changeSettingState() },
+        ) {
+            Icon(
+                imageVector = Icons.Outlined.Settings,
+                contentDescription = "setting button",
                 modifier = Modifier.size(50.dp))
         }
 
@@ -511,32 +516,35 @@ fun Setting() {
         if (viewModel.settingButtonVisible) {
             Column(
                 modifier = Modifier
-                .fillMaxSize()
-                .offset(
-                    x = 0.dp,
-                    y = 50.dp
-                ),
+                    .fillMaxSize()
+                    .offset(
+                        x = 0.dp,
+                        y = 50.dp
+                    ),
                 verticalArrangement = Arrangement.spacedBy(2.dp),
             ) {
-                Button(onClick = {
-                    viewModel.changeChargeState(SettingChargeState.Charge5Sec)
-                },
+                Button(
+                    onClick = {
+                        viewModel.changeChargeState(SettingChargeState.Charge5Sec)
+                    },
                     modifier = buttonModifier
                 ) {
                     Text(text = "5 sec Charge")
                 }
 
-                Button(onClick = {
-                    viewModel.changeChargeState(SettingChargeState.Charge10Sec)
-                },
+                Button(
+                    onClick = {
+                        viewModel.changeChargeState(SettingChargeState.Charge10Sec)
+                    },
                     modifier = buttonModifier
                 ) {
                     Text(text = "10 sec Charge")
                 }
 
-                Button(onClick = {
-                    viewModel.changeChargeState(SettingChargeState.Charge15Sec)
-                },
+                Button(
+                    onClick = {
+                        viewModel.changeChargeState(SettingChargeState.Charge15Sec)
+                    },
                     modifier = buttonModifier
                 ) {
                     Text(text = "15 sec Charge")
@@ -553,7 +561,8 @@ fun ChargeAction() {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.TopEnd
     ) {
-        Button(onClick = { viewModel.chargeStart() }) {
+        Button(
+            onClick = { viewModel.chargeStart() }) {
             Text(text = viewModel.chargeButtonString)
         }
     }
@@ -567,13 +576,13 @@ fun ChargingAnimation() {
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.TopCenter,
         ) {
-            Box(modifier = Modifier
-                .size(100.dp)
-                .clip(CircleShape)
-                .background(Color.DarkGray),
+            Box(
+                modifier = Modifier
+                    .size(100.dp)
+                    .clip(CircleShape)
+                    .background(Color.DarkGray),
                 contentAlignment = Alignment.Center,
-            )
-            {
+            ) {
                 Text(
                     text = viewModel.chargeCountDownString,
                     style = MaterialTheme.typography.h3,
@@ -586,7 +595,6 @@ fun ChargingAnimation() {
                         )
                 )
             }
-
         }
     }
 }
