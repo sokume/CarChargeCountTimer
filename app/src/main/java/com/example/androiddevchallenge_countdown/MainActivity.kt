@@ -160,7 +160,7 @@ fun ChargeStatus() {
         }
         Column(modifier = Modifier.weight(1.0f, true)) {
             Icon(
-                Icons.Filled.Bolt, "" ,
+                Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 2) inactiveColor else activeColor
             )
@@ -309,24 +309,35 @@ fun Background(maxWidth: Dp) {
     )
 
     val modifier = Modifier
-        .offset(x = if(viewModel.isCharge) {
-            maxWidth / 2
-        }else{
-            maxWidth * positionState.value
-        })
+        .offset(
+            x = if(viewModel.isCharge) {
+                maxWidth / 2
+            }else{
+                maxWidth * positionState.value
+            }
+        )
 
     Row(modifier = modifier
         .height(100.dp)
         .fillMaxWidth()
     )
     {
-        val icon = if (viewModel.isCharge) {
-            Icon(Icons.Filled.EvStation, "" ,
+        if (viewModel.isCharge) {
+            Icon(
+                Icons.Filled.EvStation, "",
                 Modifier
                     .size(100.dp)
-                    .offset(x = (-80).dp), tint = Color.LightGray)
+                    .offset(
+                        x = (-80).dp),
+                tint = Color.LightGray
+            )
         }else{
-            Icon(Icons.Filled.Business, "" , Modifier.size(100.dp), tint = Color.LightGray)
+            Icon(
+                Icons.Filled.Business,
+                "",
+                Modifier.size(100.dp),
+                tint = Color.LightGray
+            )
         }
     }
 }
@@ -359,18 +370,33 @@ fun CarAnimation() {
         val chargeColor = animateColorAsState(
             targetValue = if(batteryState.value > 0.5) Color.White else Color(0xFFF4B400)
         )
-        Icon(Icons.Filled.Bolt, "" , Modifier.size(75.dp), tint = chargeColor.value)
+        Icon(
+            Icons.Filled.Bolt,
+            "" ,
+            Modifier.size(75.dp),
+            tint = chargeColor.value
+        )
     }else{
         val runColor = animateColorAsState(
             targetValue = if(batteryState.value > 0.5) Color.White else Color.LightGray
         )
-        Icon(Icons.Filled.FormatAlignRight, "" , Modifier.size(75.dp), tint = runColor.value)
+        Icon(
+            Icons.Filled.FormatAlignRight,
+            "" ,
+            Modifier.size(75.dp),
+            tint = runColor.value
+        )
     }
 }
 
 @Composable
 fun Car() {
-    Icon(Icons.Filled.Toys, "" , Modifier.size(75.dp), tint = Color.White)
+    Icon(
+        Icons.Filled.Toys,
+        "" ,
+        Modifier.size(75.dp),
+        tint = Color.White
+    )
 }
 
 // ----------------------
@@ -380,12 +406,17 @@ fun ActionScreen() {
     Row {
         Column(
             modifier = Modifier
-                .weight(1.0f, true)
+                .weight(1.0f,
+                    true
+                )
                 .padding(16.dp),
         ) {
             Setting()
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f,
+            true
+            )
+        ) {
             Box(
                 modifier = Modifier
                     .fillMaxSize()
@@ -426,7 +457,10 @@ fun Setting() {
         if(viewModel.settingButtonVisible) {
             Column(modifier = Modifier
                 .fillMaxSize()
-                .offset(x = 0.dp, y = 50.dp),
+                .offset(
+                    x = 0.dp,
+                    y = 50.dp
+                ),
                 verticalArrangement = Arrangement.spacedBy(2.dp),
             ) {
                 Button(onClick = {
@@ -492,7 +526,9 @@ fun ChargingAnimation() {
                     textAlign = TextAlign.Center,
                     modifier = Modifier
                         .size(75.dp)
-                        .offset(y = 10.dp)
+                        .offset(
+                            y = 10.dp
+                        )
                 )
             }
 
