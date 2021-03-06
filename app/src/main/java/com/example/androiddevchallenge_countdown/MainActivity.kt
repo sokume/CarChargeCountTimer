@@ -133,7 +133,8 @@ fun Ground() {
         }
         Row(
             modifier = Modifier
-                .weight(1.0f, true)) {
+                .weight(1.0f, true)
+        ) {
             Box(
                 modifier = Modifier
                     .fillMaxSize()
@@ -157,140 +158,160 @@ fun ChargeStatus() {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 2) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 3) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 4) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 5) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 6) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 7) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 8) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 9) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 10) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 11) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 12) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 13) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 14) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 15) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 16) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 17) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 18) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
                 tint = if (chargeCount < 19) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Icon(
                 Icons.Filled.Bolt, "",
                 Modifier.size(50.dp),
@@ -325,8 +346,8 @@ fun Background(maxWidth: Dp) {
 
     Row(
         modifier = modifier
-        .height(100.dp)
-        .fillMaxWidth()
+            .height(100.dp)
+            .fillMaxWidth()
     )
     {
         if (viewModel.isCharge) {
@@ -355,8 +376,8 @@ fun Background(maxWidth: Dp) {
 fun CarItem() {
     Row(
         modifier = Modifier
-        .height(75.dp)
-        .width(150.dp)
+            .height(75.dp)
+            .width(150.dp)
     )
     {
         CarAnimation()
@@ -426,7 +447,7 @@ fun ActionScreen() {
         }
         Column(modifier = Modifier.weight(1.0f,
             true
-            )
+        )
         ) {
             Box(
                 modifier = Modifier
@@ -436,7 +457,8 @@ fun ActionScreen() {
                 ChargingAnimation()
             }
         }
-        Column(modifier = Modifier.weight(1.0f, true)) {
+        Column(modifier = Modifier.weight(1.0f, true)
+        ) {
             Box(
                 modifier = Modifier
                     .fillMaxSize()
