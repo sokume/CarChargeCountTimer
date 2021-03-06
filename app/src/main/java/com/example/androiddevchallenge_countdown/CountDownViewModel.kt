@@ -17,13 +17,13 @@ sealed class SettingButtonState{
 
 sealed class SettingChargeState {
 
-    abstract fun buttonString():String
-    abstract fun timeFuture():Long
+    abstract fun buttonString(): String
+    abstract fun timeFuture(): Long
 
-    companion object{
-        private const val CHARGE_5SEC_STRING : String = "5 sec Charge START!"
-        private const val CHARGE_10SEC_STRING : String = "10 sec Charge START!"
-        private const val CHARGE_15SEC_STRING : String = "15 sec Charge START!"
+    companion object {
+        private const val CHARGE_5SEC_STRING: String = "5 sec Charge START!"
+        private const val CHARGE_10SEC_STRING: String = "10 sec Charge START!"
+        private const val CHARGE_15SEC_STRING: String = "15 sec Charge START!"
     }
 
     object Charge5Sec : SettingChargeState() {
