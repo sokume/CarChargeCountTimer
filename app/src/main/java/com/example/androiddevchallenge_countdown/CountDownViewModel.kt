@@ -15,7 +15,7 @@ sealed class SettingButtonState{
     object Close : SettingButtonState()
 }
 
-sealed class SettingChargeState{
+sealed class SettingChargeState {
 
     abstract fun buttonString():String
     abstract fun timeFuture():Long
