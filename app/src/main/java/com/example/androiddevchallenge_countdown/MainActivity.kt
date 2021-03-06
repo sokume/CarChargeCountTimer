@@ -495,7 +495,6 @@ fun ActionScreen() {
     }
 }
 
-
 @Composable
 fun Setting() {
     Box(
@@ -600,4 +599,3 @@ fun ChargingAnimation() {
         }
     }
 }
-
