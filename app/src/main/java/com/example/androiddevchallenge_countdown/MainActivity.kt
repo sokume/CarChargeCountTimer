@@ -481,7 +481,8 @@ fun ActionScreen() {
         }
         Column(
             modifier = Modifier.weight(
-                1.0f, true)
+                1.0f, true
+            )
         ) {
             Box(
                 modifier = Modifier
@@ -507,7 +508,8 @@ fun Setting() {
             Icon(
                 imageVector = Icons.Outlined.Settings,
                 contentDescription = "setting button",
-                modifier = Modifier.size(50.dp))
+                modifier = Modifier.size(50.dp)
+            )
         }
 
         val buttonModifier = Modifier
@@ -549,7 +551,6 @@ fun Setting() {
                 ) {
                     Text(text = "15 sec Charge")
                 }
-
             }
         }
     }
@@ -562,7 +563,8 @@ fun ChargeAction() {
         contentAlignment = Alignment.TopEnd
     ) {
         Button(
-            onClick = { viewModel.chargeStart() }) {
+            onClick = { viewModel.chargeStart() }
+        ) {
             Text(text = viewModel.chargeButtonString)
         }
     }
