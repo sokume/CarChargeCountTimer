@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge_countdown
 
 import android.os.CountDownTimer
@@ -10,7 +25,7 @@ import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ViewModel
 
-sealed class SettingButtonState{
+sealed class SettingButtonState {
     object Open : SettingButtonState()
     object Close : SettingButtonState()
 }
@@ -31,12 +46,12 @@ sealed class SettingChargeState {
         override fun timeFuture(): Long = 5000
     }
 
-    object Charge10Sec : SettingChargeState(){
+    object Charge10Sec : SettingChargeState() {
         override fun buttonString(): String = CHARGE_10SEC_STRING
         override fun timeFuture(): Long = 10000
     }
 
-    object Charge15Sec : SettingChargeState(){
+    object Charge15Sec : SettingChargeState() {
         override fun buttonString(): String = CHARGE_15SEC_STRING
         override fun timeFuture(): Long = 15000
     }
