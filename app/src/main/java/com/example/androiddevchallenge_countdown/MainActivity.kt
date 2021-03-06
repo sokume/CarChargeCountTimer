@@ -131,7 +131,9 @@ fun Ground() {
                 CarItem()
             }
         }
-        Row(modifier = Modifier.weight(1.0f, true)) {
+        Row(
+            modifier = Modifier
+                .weight(1.0f, true)) {
             Box(
                 modifier = Modifier
                     .fillMaxSize()
@@ -150,7 +152,11 @@ fun ChargeStatus() {
     val activeColor = Color(0xFFF4B400)
     val inactiveColor = Color.LightGray
 
-    Row(modifier = Modifier.fillMaxSize().padding(16.dp)) {
+    Row(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
         Column(modifier = Modifier.weight(1.0f, true)) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -310,14 +316,15 @@ fun Background(maxWidth: Dp) {
 
     val modifier = Modifier
         .offset(
-            x = if(viewModel.isCharge) {
+            x = if (viewModel.isCharge) {
                 maxWidth / 2
-            }else{
+            } else {
                 maxWidth * positionState.value
             }
         )
 
-    Row(modifier = modifier
+    Row(
+        modifier = modifier
         .height(100.dp)
         .fillMaxWidth()
     )
@@ -328,14 +335,16 @@ fun Background(maxWidth: Dp) {
                 Modifier
                     .size(100.dp)
                     .offset(
-                        x = (-80).dp),
+                        x = (-80).dp
+                    ),
                 tint = Color.LightGray
             )
-        }else{
+        } else {
             Icon(
                 Icons.Filled.Business,
                 "",
-                Modifier.size(100.dp),
+                Modifier.size(100.dp
+                ),
                 tint = Color.LightGray
             )
         }
@@ -344,9 +353,11 @@ fun Background(maxWidth: Dp) {
 
 @Composable
 fun CarItem() {
-    Row(modifier = Modifier
+    Row(
+        modifier = Modifier
         .height(75.dp)
-        .width(150.dp))
+        .width(150.dp)
+    )
     {
         CarAnimation()
         Car()
@@ -368,7 +379,7 @@ fun CarAnimation() {
     )
     if (viewModel.isCharge) {
         val chargeColor = animateColorAsState(
-            targetValue = if(batteryState.value > 0.5) Color.White else Color(0xFFF4B400)
+            targetValue = if (batteryState.value > 0.5) Color.White else Color(0xFFF4B400)
         )
         Icon(
             Icons.Filled.Bolt,
@@ -376,9 +387,9 @@ fun CarAnimation() {
             Modifier.size(75.dp),
             tint = chargeColor.value
         )
-    }else{
+    } else {
         val runColor = animateColorAsState(
-            targetValue = if(batteryState.value > 0.5) Color.White else Color.LightGray
+            targetValue = if (batteryState.value > 0.5) Color.White else Color.LightGray
         )
         Icon(
             Icons.Filled.FormatAlignRight,
@@ -454,7 +465,7 @@ fun Setting() {
         val buttonModifier = Modifier
             .width(150.dp)
             .height(50.dp)
-        if(viewModel.settingButtonVisible) {
+        if (viewModel.settingButtonVisible) {
             Column(modifier = Modifier
                 .fillMaxSize()
                 .offset(
