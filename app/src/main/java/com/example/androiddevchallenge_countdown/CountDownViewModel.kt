@@ -16,7 +16,6 @@
 package com.example.androiddevchallenge_countdown
 
 import android.os.CountDownTimer
-import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -63,7 +62,7 @@ class CountDownViewModel : ViewModel(), LifecycleObserver {
     var settingButtonVisible: Boolean by mutableStateOf(false)
 
     fun changeSettingState() {
-        settingButtonState = when(settingButtonState) {
+        settingButtonState = when (settingButtonState) {
             SettingButtonState.Close -> {
                 settingButtonVisible = true
                 SettingButtonState.Open
@@ -81,7 +80,7 @@ class CountDownViewModel : ViewModel(), LifecycleObserver {
     var isCharge by mutableStateOf(false)
     var chargeCount by mutableStateOf(5)
 
-    fun changeChargeState(currentState : SettingChargeState) {
+    fun changeChargeState(currentState: SettingChargeState) {
         chargeButtonState = currentState
         chargeButtonString = currentState.buttonString()
         changeSettingState()
@@ -91,7 +90,7 @@ class CountDownViewModel : ViewModel(), LifecycleObserver {
         chargeCountDownString = "${chargeButtonState.timeFuture() / 1000}"
         isCharge = true
 
-        val timer = object: CountDownTimer(chargeButtonState.timeFuture(), 1000) {
+        val timer = object : CountDownTimer(chargeButtonState.timeFuture(), 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 chargeCount++
                 chargeCountDownString = "${millisUntilFinished / 1000}"
@@ -114,20 +113,19 @@ class CountDownViewModel : ViewModel(), LifecycleObserver {
     }
 
     private var loopTimerState = true
-    private var loopTimer : CountDownTimer? = null
+    private var loopTimer: CountDownTimer? = null
 
     private fun loopTimerStart() {
         if (loopTimer != null) { return }
-        loopTimer = object: CountDownTimer(3000,3000) {
+        loopTimer = object : CountDownTimer(3000,3000) {
             override fun onTick(millisUntilFinished: Long) {
             }
             override fun onFinish() {
                 if (chargeCount > 1 && !isCharge) {
                     chargeCount--
                 }
-                Log.d("TAG","COUNT DOWN $chargeCount")
                 loopTimer = null
-                if (loopTimerState){
+                if (loopTimerState) {
                     loopTimerStart()
                 }
             }
