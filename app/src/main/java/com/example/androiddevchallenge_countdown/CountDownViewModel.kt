@@ -117,7 +117,7 @@ class CountDownViewModel : ViewModel(), LifecycleObserver {
 
     private fun loopTimerStart() {
         if (loopTimer != null) { return }
-        loopTimer = object : CountDownTimer(3000,3000) {
+        loopTimer = object : CountDownTimer(3000, 3000) {
             override fun onTick(millisUntilFinished: Long) {
             }
             override fun onFinish() {
