@@ -368,8 +368,7 @@ fun Background(maxWidth: Dp) {
         modifier = modifier
             .height(100.dp)
             .fillMaxWidth()
-    )
-    {
+    ) {
         if (viewModel.isCharge) {
             Icon(
                 Icons.Filled.EvStation, "",
@@ -384,7 +383,8 @@ fun Background(maxWidth: Dp) {
             Icon(
                 Icons.Filled.Business,
                 "",
-                Modifier.size(100.dp
+                Modifier.size(
+                    100.dp
                 ),
                 tint = Color.LightGray
             )
@@ -398,8 +398,7 @@ fun CarItem() {
         modifier = Modifier
             .height(75.dp)
             .width(150.dp)
-    )
-    {
+    ) {
         CarAnimation()
         Car()
     }
@@ -424,7 +423,7 @@ fun CarAnimation() {
         )
         Icon(
             Icons.Filled.Bolt,
-            "" ,
+            "",
             Modifier.size(75.dp),
             tint = chargeColor.value
         )
@@ -434,7 +433,7 @@ fun CarAnimation() {
         )
         Icon(
             Icons.Filled.FormatAlignRight,
-            "" ,
+            "",
             Modifier.size(75.dp),
             tint = runColor.value
         )
@@ -445,7 +444,7 @@ fun CarAnimation() {
 fun Car() {
     Icon(
         Icons.Filled.Toys,
-        "" ,
+        "",
         Modifier.size(75.dp),
         tint = Color.White
     )
