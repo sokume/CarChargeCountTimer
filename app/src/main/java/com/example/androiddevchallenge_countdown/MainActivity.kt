@@ -158,7 +158,8 @@ fun ChargeStatus() {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -166,7 +167,8 @@ fun ChargeStatus() {
                 tint = activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -174,7 +176,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 2) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -182,7 +185,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 3) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -190,7 +194,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 4) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -198,7 +203,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 5) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -206,7 +212,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 6) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -214,7 +221,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 7) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -222,7 +230,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 8) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -230,7 +239,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 9) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -238,7 +248,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 10) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -246,7 +257,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 11) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -254,7 +266,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 12) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -262,7 +275,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 13) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -270,7 +284,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 14) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -278,7 +293,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 15) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -286,7 +302,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 16) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -294,7 +311,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 17) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -302,7 +320,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 18) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -310,7 +329,8 @@ fun ChargeStatus() {
                 tint = if (chargeCount < 19) inactiveColor else activeColor
             )
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Icon(
                 Icons.Filled.Bolt, "",
@@ -445,7 +465,8 @@ fun ActionScreen() {
         ) {
             Setting()
         }
-        Column(modifier = Modifier.weight(1.0f,
+        Column(
+            modifier = Modifier.weight(1.0f,
             true
         )
         ) {
@@ -457,7 +478,8 @@ fun ActionScreen() {
                 ChargingAnimation()
             }
         }
-        Column(modifier = Modifier.weight(1.0f, true)
+        Column(
+            modifier = Modifier.weight(1.0f, true)
         ) {
             Box(
                 modifier = Modifier
@@ -488,7 +510,8 @@ fun Setting() {
             .width(150.dp)
             .height(50.dp)
         if (viewModel.settingButtonVisible) {
-            Column(modifier = Modifier
+            Column(
+                modifier = Modifier
                 .fillMaxSize()
                 .offset(
                     x = 0.dp,
