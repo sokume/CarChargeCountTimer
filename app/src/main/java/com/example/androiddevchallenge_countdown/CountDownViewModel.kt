@@ -62,8 +62,8 @@ class CountDownViewModel : ViewModel(), LifecycleObserver {
     private var settingButtonState: SettingButtonState = SettingButtonState.Close
     var settingButtonVisible: Boolean by mutableStateOf(false)
 
-    fun changeSettingState(){
-        settingButtonState = when(settingButtonState){
+    fun changeSettingState() {
+        settingButtonState = when(settingButtonState) {
             SettingButtonState.Close -> {
                 settingButtonVisible = true
                 SettingButtonState.Open
@@ -81,13 +81,13 @@ class CountDownViewModel : ViewModel(), LifecycleObserver {
     var isCharge by mutableStateOf(false)
     var chargeCount by mutableStateOf(5)
 
-    fun changeChargeState(currentState : SettingChargeState){
+    fun changeChargeState(currentState : SettingChargeState) {
         chargeButtonState = currentState
         chargeButtonString = currentState.buttonString()
         changeSettingState()
     }
 
-    fun chargeStart(){
+    fun chargeStart() {
         chargeCountDownString = "${chargeButtonState.timeFuture() / 1000}"
         isCharge = true
 
@@ -116,13 +116,13 @@ class CountDownViewModel : ViewModel(), LifecycleObserver {
     private var loopTimerState = true
     private var loopTimer : CountDownTimer? = null
 
-    private fun loopTimerStart(){
+    private fun loopTimerStart() {
         if (loopTimer != null) { return }
         loopTimer = object: CountDownTimer(3000,3000) {
             override fun onTick(millisUntilFinished: Long) {
             }
             override fun onFinish() {
-                if (chargeCount > 1 && !isCharge){
+                if (chargeCount > 1 && !isCharge) {
                     chargeCount--
                 }
                 Log.d("TAG","COUNT DOWN $chargeCount")
